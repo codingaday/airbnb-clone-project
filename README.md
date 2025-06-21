@@ -2,14 +2,34 @@
 
 This project is a backend system that mimics core features of Airbnb, such as user management, property listings, bookings, payments, and reviews. It is built using scalable technologies and optimized for performance and maintainability.
 
-## Project Objectives
+# Feature Breakdown
 
-- **User Management**: Secure user registration, authentication, and profile handling.
-- **Property Management**: Full CRUD for property listings.
-- **Booking System**: Enable users to book properties and manage reservations.
-- **Payment Processing**: Integrate and manage booking payments.
-- **Review System**: Allow users to leave feedback on properties.
-- **Data Optimization**: Use caching and indexing for fast, efficient queries.
+- **User Management**  
+  Handles registration, login, and profile management for users. This ensures both guests and hosts can securely access and manage their accounts.
+
+- **Property Management**  
+  Allows hosts to create, update, and manage property listings. Properties include details like title, location, price, and description to attract potential guests.
+
+- **Booking System**  
+  Enables users to reserve available properties for specific dates. This feature tracks check-in/check-out information and prevents double bookings.
+
+- **Payment Processing**  
+  Manages transactions for bookings through secure payment gateways. It ensures payments are recorded, verified, and linked to booking records.
+
+- **Review System**  
+  Lets users leave feedback and ratings after a stay. Reviews help maintain quality and build trust between hosts and guests.
+
+- **API Documentation**  
+  Provides clear REST and GraphQL documentation using OpenAPI standards. This helps frontend developers and third parties integrate with the backend easily.
+
+- **Database Optimization**  
+  Uses indexing and caching to improve performance. This ensures quick response times for searches, bookings, and listing retrievals.
+
+- **Asynchronous Tasks (Celery)**  
+  Manages background operations like sending emails or processing payments. This keeps the main app responsive and efficient.
+
+- **Containerized Deployment (Docker)**  
+  Ensures consistent environments across development and production. Helps scale and deploy the backend with minimal friction.
 
 ## Technology Stack
 
