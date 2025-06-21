@@ -175,15 +175,15 @@ This project is a backend system that mimics core features of Airbnb, such as us
 - **Preventing Downtime and Abuse**  
   Security measures help guard the API against attacks that can cause outages or degrade performance for legitimate users.
 
-  # CI/CD Pipeline
+# CI/CD Pipeline
 
-* **What is CI/CD?**  
+- **What is CI/CD?**  
   CI/CD stands for Continuous Integration and Continuous Deployment. It is a development practice where code changes are automatically built, tested, and deployed. This helps teams deliver updates faster and more reliably.
 
-* **Why It Matters**  
+- **Why It Matters**  
   Implementing CI/CD ensures that every change to the codebase is automatically tested and validated before going live. This reduces bugs, improves code quality, and accelerates development cycles. It also allows for quick rollbacks and easier collaboration among team members.
 
-* **Tools Used**
+- **Tools Used**
   - **GitHub Actions** – Automates workflows like testing, linting, and deploying code after each commit or pull request.
   - **Docker** – Ensures consistent runtime environments during development and production.
   - **Celery with Redis** – Supports background task management as part of deployment workflows.
