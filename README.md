@@ -144,6 +144,40 @@ This project is a backend system that mimics core features of Airbnb, such as us
 - A **User** can leave multiple **Reviews**, each tied to one **Property**
 - A **Payment** is linked to one **Booking**
 
+# API Security
+
+- **Authentication**  
+  The system will use token-based authentication (e.g., JWT or DRF TokenAuth) to ensure only verified users can access protected endpoints. This helps prevent unauthorized access to user accounts and personal data.
+
+- **Authorization**  
+  Role-based access control (RBAC) will be applied to restrict what users can do based on their role (e.g., guest, host, admin). This ensures users can only perform actions allowed for their access level, such as editing only their own properties or bookings.
+
+- **Rate Limiting**  
+  Limits will be placed on API requests (e.g., per minute/hour) to prevent abuse, brute-force attacks, and denial-of-service (DoS) attempts. This keeps the system stable and fair for all users.
+
+- **Data Validation and Input Sanitization**  
+  All user input will be validated and sanitized to prevent injection attacks such as SQL injection or XSS. This protects the backend and users from malicious data.
+
+- **Secure Payment Processing**  
+  Payments will be handled through trusted third-party providers (e.g., Stripe or PayPal) using encrypted connections. This ensures sensitive financial data is never directly exposed or stored on the server.
+
+- **HTTPS Enforcement**  
+  All traffic will be encrypted using HTTPS to protect data in transit, preventing man-in-the-middle attacks.
+
+## Why Security Matters
+
+- **Protecting User Data**  
+  Users entrust the platform with personal and financial information. Securing this data builds trust and meets compliance standards.
+
+- **Securing Transactions**  
+  Payment fraud or tampering can lead to major financial loss. Security measures ensure that all transactions are legitimate and traceable.
+
+- **Maintaining Platform Integrity**  
+  Authorization and rate limiting prevent users from exploiting the system, which protects both the business and its users.
+
+- **Preventing Downtime and Abuse**  
+  Security measures help guard the API against attacks that can cause outages or degrade performance for legitimate users.
+
 # Team Roles
 
 - **Product Owner**  
