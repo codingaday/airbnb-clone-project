@@ -63,6 +63,55 @@ API Documentation | OpenAPI Standard
 - `PUT /reviews/{review_id}/` — Edit review
 - `DELETE /reviews/{review_id}/` — Delete review
 
+# Database Design
+
+- **Users**
+
+  - `id`: Unique identifier
+  - `name`: Full name of the user
+  - `email`: Used for login and communication
+  - `password`: Hashed password
+  - `role`: Host or guest
+
+- **Properties**
+
+  - `id`: Unique identifier
+  - `title`: Name of the property
+  - `description`: Property details
+  - `location`: Address or city
+  - `owner_id`: References the user (host) who owns the property
+
+- **Bookings**
+
+  - `id`: Unique identifier
+  - `property_id`: References the booked property
+  - `user_id`: References the guest who made the booking
+  - `check_in`: Start date of stay
+  - `check_out`: End date of stay
+
+- **Reviews**
+
+  - `id`: Unique identifier
+  - `property_id`: References the property being reviewed
+  - `user_id`: References the user who wrote the review
+  - `rating`: Numeric score (e.g., 1–5)
+  - `comment`: Written feedback
+
+- **Payments**
+  - `id`: Unique identifier
+  - `booking_id`: References the related booking
+  - `amount`: Payment total
+  - `payment_method`: E.g., card, PayPal
+  - `status`: E.g., completed, pending, failed
+
+## Entity Relationships
+
+- A **User** can own multiple **Properties**
+- A **Property** can have multiple **Bookings**
+- A **Booking** is made by one **User** and linked to one **Property**
+- A **User** can leave multiple **Reviews**, each tied to one **Property**
+- A **Payment** is linked to one **Booking**
+
 # Team Roles
 
 - **Product Owner**  
