@@ -31,19 +31,31 @@ This project is a backend system that mimics core features of Airbnb, such as us
 - **Containerized Deployment (Docker)**  
   Ensures consistent environments across development and production. Helps scale and deploy the backend with minimal friction.
 
-## Technology Stack
+# Technology Stack
 
-## Category | Technology
+- **Django**  
+  A high-level Python web framework used to build and manage the backend logic and models.
 
-Backend Framework | Django
-REST API | Django REST Framework
-GraphQL API | GraphQL
-Database | PostgreSQL
-Caching | Redis
-Task Queue | Celery
-Containerization | Docker
-Deployment | CI/CD Pipelines
-API Documentation | OpenAPI Standard
+- **Django REST Framework (DRF)**  
+  A powerful toolkit for building Web APIs, used to expose CRUD functionality through RESTful endpoints.
+
+- **GraphQL**  
+  Enables flexible and efficient data querying for clients, minimizing over-fetching and under-fetching.
+
+- **PostgreSQL**  
+  A robust and scalable relational database system used to store structured application data.
+
+- **Redis**  
+  An in-memory data store used for caching and session management to boost performance.
+
+- **Celery**  
+  Handles asynchronous tasks like sending emails and processing background jobs (e.g., payments).
+
+- **Docker**  
+  Containerizes the application for consistent environments during development, testing, and deployment.
+
+- **CI/CD Pipelines**  
+  Automates testing and deployment to ensure smooth, reliable, and fast delivery of code updates.
 
 ## REST API Endpoints
 
