@@ -1,8 +1,8 @@
-#Airbnb Clone Project
+# Airbnb Clone Project
 
 This project is a backend system that mimics core features of Airbnb, such as user management, property listings, bookings, payments, and reviews. It is built using scalable technologies and optimized for performance and maintainability.
 
-##Project Objectives
+## Project Objectives
 
 - **User Management**: Secure user registration, authentication, and profile handling.
 - **Property Management**: Full CRUD for property listings.
@@ -11,13 +11,13 @@ This project is a backend system that mimics core features of Airbnb, such as us
 - **Review System**: Allow users to leave feedback on properties.
 - **Data Optimization**: Use caching and indexing for fast, efficient queries.
 
-##Tech Stack
+## Technology Stack
 
 ## Category | Technology
 
 Backend Framework | Django
 REST API | Django REST Framework
-GraphQL API | Graphene / GraphQL
+GraphQL API | GraphQL
 Database | PostgreSQL
 Caching | Redis
 Task Queue | Celery
@@ -25,9 +25,9 @@ Containerization | Docker
 Deployment | CI/CD Pipelines
 API Documentation | OpenAPI Standard
 
-##REST API Endpoints
+## REST API Endpoints
 
-###Users
+### Users
 
 - `GET /users/` — List users
 - `POST /users/` — Create user
@@ -35,7 +35,7 @@ API Documentation | OpenAPI Standard
 - `PUT /users/{user_id}/` — Update user
 - `DELETE /users/{user_id}/` — Delete user
 
-###Properties
+### Properties
 
 - `GET /properties/` — List properties
 - `POST /properties/` — Add property
@@ -43,7 +43,7 @@ API Documentation | OpenAPI Standard
 - `PUT /properties/{property_id}/` — Update property
 - `DELETE /properties/{property_id}/` — Delete property
 
-###Bookings
+### Bookings
 
 - `GET /bookings/` — List bookings
 - `POST /bookings/` — Create booking
@@ -51,11 +51,11 @@ API Documentation | OpenAPI Standard
 - `PUT /bookings/{booking_id}/` — Update booking
 - `DELETE /bookings/{booking_id}/` — Cancel booking
 
-###Payments
+### Payments
 
 - `POST /payments/` — Process payment
 
-###Reviews
+### Reviews
 
 - `GET /reviews/` — List reviews
 - `POST /reviews/` — Add review
@@ -98,7 +98,7 @@ API Documentation | OpenAPI Standard
 - **Test Automation Engineer**  
   Writes automated tests to speed up testing and catch issues early.
 
-##API Docs
+## API Docs
 
 - OpenAPI for REST endpoints
 - GraphQL playground for querying the backend
